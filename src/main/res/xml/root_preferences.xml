@@ -1,0 +1,34 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Algorithm">
+        <ListPreference
+            android:defaultValue="ASTAR"
+            app:entries="@array/algorithms"
+            app:entryValues="@array/algorithms"
+            app:key="Algorithm_Preference"
+            app:title="Algorithm Preference" />
+        <ListPreference
+            android:defaultValue="FAST"
+            android:entries="@array/speeds"
+            android:entryValues="@array/speeds"
+            android:key="Speed"
+            android:title="Speed" />
+        <ListPreference
+            android:defaultValue="18x32"
+            android:entries="@array/gridSizes"
+            android:entryValues="@array/gridSizes"
+            android:key="Grid_Size"
+            android:title="Grid Size" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Mazes">
+        <ListPreference
+            android:defaultValue="SIMPLE"
+            app:entries="@array/mazes"
+            app:entryValues="@array/mazes"
+            app:key="Maze_Preference"
+            app:title="Maze Preference"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
